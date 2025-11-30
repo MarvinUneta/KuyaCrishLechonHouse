@@ -8,7 +8,7 @@ export const SiteFooter = ({ contact }: SiteFooterProps) => (
   <footer className="site-footer">
     <div className="site-footer__content">
       <div className="site-footer__brand">
-        <p className="site-footer__logo">MRVS</p>
+        <img src="../assets/Ice Cream (3).png" alt="MRVS Logo" className="site-footer__logo" />
         <p>Roasted Pig Studio</p>
       </div>
       <div className="site-footer__contact">
