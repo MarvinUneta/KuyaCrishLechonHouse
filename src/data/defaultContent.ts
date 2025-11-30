@@ -3,7 +3,7 @@ import type { SiteContent } from '../types/content';
 export const defaultContent: SiteContent = {
   hero: {
     eyebrow: 'Heritage-Fired Flavor',
-    title: 'Mavi Roast Co.',
+    title: 'Kuya Cris Lechon House',
     subtitle:
       'Whole roasted lechon, small-batch sauces, and full-service carving teams tailored to every milestone.',
     primaryCta: 'Plan a Feast',

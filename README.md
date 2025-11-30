@@ -1,4 +1,4 @@
-# Mavi Roast Co. — React + Vite Experience
+# Kuya Cris Lechon House — React + Vite Experience
 
 Full-stack website for a roasted pig business that ships flexible content from a JSON-driven API to a React front of house. The codebase is intentionally structured with three layers so marketing changes stay easy:
 
