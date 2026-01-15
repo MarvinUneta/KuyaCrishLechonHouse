@@ -13,7 +13,10 @@ export const NavigationBar = () => {
   }, []);
 
   return (
-    <nav className={`nav-pill ${scrolled ? 'scrolled' : ''}`}>
+    <nav 
+      className={`nav-pill ${scrolled ? 'scrolled' : ''}`}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    >
       <img src={IceCreamLogo} alt="Logo" className="nav-logo" />
       <span className="nav-brand">Kuya Cris Lechon House</span>
     </nav>
