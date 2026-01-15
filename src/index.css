@@ -264,14 +264,67 @@ h2 {
     color: var(--color-subtle);
 }
 
+.testimonial-card footer span {
+    font-size: 0.9rem;
+    color: var(--color-subtle);
+}
+
+.nav-pill {
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 2rem;
+    background: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9999px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-pill:hover {
+    transform: translateX(-50%) scale(1.05);
+    border-color: rgba(212, 175, 55, 0.5);
+    box-shadow: 0 10px 40px rgba(212, 175, 55, 0.15);
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+.nav-brand {
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+}
+
 @media (max-width: 768px) {
+
   .site-footer__content {
+
     flex-direction: column;
+
     text-align: center;
+
     gap: 2rem;
+
   }
 
+
+
   .site-footer__contact {
+
     text-align: center;
+
   }
+
 }
+
+
