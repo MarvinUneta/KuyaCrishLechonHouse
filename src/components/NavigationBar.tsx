@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import IceCreamLogo from '../assets/Ice Cream (3).png';
 
 export const NavigationBar = () => {
