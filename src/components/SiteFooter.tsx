@@ -1,5 +1,6 @@
 import type { ContactInfo } from '../types/content';
 import IceCreamLogo from '../assets/01.png';
+import FacebookIcon from '../assets/fb-icon.png';
 
 type SiteFooterProps = {
   contact: ContactInfo;
@@ -15,6 +16,10 @@ export const SiteFooter = ({ contact }: SiteFooterProps) => (
       <div className="site-footer__contact">
         <a href={`tel:${contact.phone}`}>{contact.phone}</a>
         <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        <a href={contact.facebook} target="_blank" rel="noopener noreferrer">
+          <img src={FacebookIcon} alt="Facebook" />
+          <span>Kuya Cris Lechon House</span>
+        </a>
         <p>{contact.location}</p>
       </div>
     </div>
@@ -23,4 +28,3 @@ export const SiteFooter = ({ contact }: SiteFooterProps) => (
     </p>
   </footer>
 );
-
