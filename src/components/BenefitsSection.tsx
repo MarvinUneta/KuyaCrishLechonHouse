@@ -87,7 +87,7 @@ export const BenefitsSection = ({ services, menu }: { services: ServiceOffering[
           return (
             <div key={item.size} className="glass-card" style={style}>
               <p className="eyebrow">{item.size}</p>
-              <h4 style={{ fontSize: '1.75rem', margin: '0.5rem 0', color: 'var(--color-gold)' }}>${item.price}</h4>
+              <h4 style={{ fontSize: '1.75rem', margin: '0.5rem 0', color: 'var(--color-gold)' }}>₱{item.price}</h4>
               <p style={{ color: 'var(--color-subtle)' }}>{item.feeds}</p>
               <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
                 {item.includes.map(line => <li key={line}>✓ {line}</li>)}
@@ -106,7 +106,7 @@ export const BenefitsSection = ({ services, menu }: { services: ServiceOffering[
             <h4 style={{ fontSize: '1.5rem', margin: '0 0 1rem' }}>{service.title}</h4>
             <p style={{ color: 'var(--color-subtle)' }}>{service.description}</p>
             <div style={{ marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display: 'flex', justifyContent: 'space-between' }}>
-              <span style={{ color: 'var(--color-gold)' }}>{service.priceRange}</span>
+              <span style={{ color: 'var(--color-gold)' }}>₱{service.priceRange}</span>
               <span style={{ color: 'var(--color-subtle)' }}>{service.leadTime}</span>
             </div>
           </div>

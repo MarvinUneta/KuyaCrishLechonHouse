@@ -11,17 +11,10 @@ export const defaultContent: SiteContent = {
   },
   services: [
     {
-      id: 'catering',
-      title: 'Signature Catering',
-      description: 'Whole hog roasting with staff, carving show, and buffet styling.',
-      priceRange: '$1,250+',
-      leadTime: 'Book 3+ weeks ahead',
-    },
-    {
       id: 'delivery',
       title: 'Roasted Pig Delivery',
-      description: 'Chef-roasted lechon delivered hot with crackling skin and sauces.',
-      priceRange: '$480 - $980',
+      description: 'Roasted lechon delivered hot with crackling skin and sauces.',
+      priceRange: '150 minimum (depends on location)',
       leadTime: 'Order 5+ days ahead',
     },
     {
@@ -34,35 +27,65 @@ export const defaultContent: SiteContent = {
   ],
   menu: [
     {
-      size: '30 lb pig',
-      feeds: 'Feeds 25-35 people',
-      price: 520,
-      includes: ['Crackling skin guarantee', 'Classic dipping sauce', 'Garlic rice tray'],
+      size: '8 kilos',
+      feeds: 'Feeds 20 people',
+      price: 13500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
     },
     {
-      size: '45 lb pig',
-      feeds: 'Feeds 40-55 people',
-      price: 780,
-      includes: ['Two sauce pairings', 'Seasonal veg sides', 'Chef carving add-on'],
+      size: '10 kilos',
+      feeds: 'Feeds 30 people',
+      price: 14500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
     },
     {
-      size: '65 lb pig',
-      feeds: 'Feeds 60-85 people',
-      price: 1120,
-      includes: ['Premium spice rub', 'Three sauce pairings', 'Event captain'],
+      size: '12 kilos',
+      feeds: 'Feeds 40 people',
+      price: 15500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
+    },
+    {
+      size: '14 kilos',
+      feeds: 'Feeds 50 people',
+      price: 16500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
+    },
+    {
+      size: '16 kilos',
+      feeds: 'Feeds 60 people',
+      price: 17500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
+    },
+    {
+      size: '18 kilos',
+      feeds: 'Feeds 70 people',
+      price: 18500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
+    },
+    {
+      size: '20 kilos',
+      feeds: 'Feeds 80 people',
+      price: 19500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
+    },
+    {
+      size: '23 kilos',
+      feeds: 'Feeds 100 people',
+      price: 20500,
+      includes: ['Crackling skin guarantee', 'Classic dipping sauce'],
     },
   ],
   testimonials: [
     {
-      name: 'Chef Alonzo Cruz',
-      role: 'Food Director, Harvest Table',
+      name: 'Kyla Quintana',
+      role: 'Taga-kain',
       quote:
-        'The crackle stayed perfect for two hours of service. Team handled guests like pros.',
+        'Ubusin niyo na yung taba, wag lang yung balat!',
     },
     {
-      name: 'Rae Villanueva',
-      role: 'Bride, Summer 2025',
-      quote: 'They orchestrated our reception feast start to finish—stress-free and spectacular.',
+      name: 'Zaira Padillo',
+      role: 'Jowa ni Ryon',
+      quote: 'Nanakit batok ko sa sarap ng lechon ni Kuya Cris!',
     },
   ],
   contact: {
