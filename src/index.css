@@ -325,26 +325,32 @@ h2 {
     user-select: none;
 }
 
-@media (max-width: 768px) {
-
-  .site-footer__content {
-
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 2rem;
-
-  }
-
-
-
-  .site-footer__contact {
-
-    text-align: center;
-
-  }
-
+.trust-points {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-subtle);
+  flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .site-footer__content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
 
+  .site-footer__contact {
+    text-align: center;
+  }
+
+  .trust-points {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+}

@@ -53,15 +53,6 @@ const styles: { [key: string]: React.CSSProperties } = {
   ctaButton: {
     marginTop: '2rem',
   },
-  trustPoints: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '1.5rem',
-    marginTop: '3rem',
-    fontFamily: 'var(--font-sans)',
-    fontSize: '0.9rem',
-    color: 'var(--color-subtle)',
-  }
 };
 
 export const Hero = ({ hero }: { hero: HeroContent }) => (
@@ -77,7 +68,7 @@ export const Hero = ({ hero }: { hero: HeroContent }) => (
           <span>Explore The Menu</span>
         </a>
       </div>
-      <div style={styles.trustPoints}>
+      <div className="trust-points">
         <span>✓ Traditional Filipino Lechon</span>
         <span>✓ Crackling skin guarantee</span>
         <span>✓ Delicious Sauce</span>
