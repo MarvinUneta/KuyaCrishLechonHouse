@@ -23,12 +23,6 @@ const h2: React.CSSProperties = {
   margin: '1rem 0',
 };
 
-const description: React.CSSProperties = {
-  fontSize: '1.1rem',
-  color: 'var(--color-subtle)',
-  lineHeight: 1.6,
-};
-
 const h3: React.CSSProperties = {
   fontSize: '1.5rem',
   fontFamily: 'var(--font-serif)',
@@ -36,38 +30,10 @@ const h3: React.CSSProperties = {
   textAlign: 'center',
 };
 
-const bentoGrid: React.CSSProperties = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridAutoRows: 'minmax(200px, auto)',
-  gap: '1.5rem',
-};
-
-const bentoItem: React.CSSProperties = {
-  padding: '2rem',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-};
-
-const bentoItem1: React.CSSProperties = {
-  ...bentoItem,
-  gridColumn: 'span 2',
-};
-
-const bentoItem2: React.CSSProperties = {
-  ...bentoItem,
-  gridColumn: 'span 1',
-};
-
-const bentoItem3: React.CSSProperties = {
-  ...bentoItem,
-  gridColumn: 'span 1',
-};
-
-const bentoItem4: React.CSSProperties = {
-  ...bentoItem,
-  gridColumn: 'span 2',
+const description: React.CSSProperties = {
+  fontSize: '1.1rem',
+  color: 'var(--color-subtle)',
+  lineHeight: 1.6,
 };
 
 export const BenefitsSection = ({ services, menu }: { services: ServiceOffering[], menu: MenuItem[] }) => (
@@ -82,20 +48,17 @@ export const BenefitsSection = ({ services, menu }: { services: ServiceOffering[
 
     <div>
       <h3 style={h3}>Menu Packages</h3>
-      <div style={bentoGrid}>
-        {menu.map((item, index) => {
-          const style = index % 4 === 0 ? bentoItem1 : index % 4 === 1 ? bentoItem2 : index % 4 === 2 ? bentoItem3 : bentoItem4;
-          return (
-            <div key={item.size} className="glass-card" style={style}>
-              <p className="eyebrow">{item.size}</p>
-              <h4 style={{ fontSize: '1.75rem', margin: '0.5rem 0', color: 'var(--color-gold)' }}>₱{item.price}</h4>
-              <p style={{ color: 'var(--color-subtle)' }}>{item.feeds}</p>
-              <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem' }}>
-                {item.includes.map(line => <li key={line}>✓ {line}</li>)}
-              </ul>
-            </div>
-          );
-        })}
+      <div style={gridContainer}>
+        {menu.map((item) => (
+          <div key={item.size} className="glass-card" style={cardStyles}>
+            <p className="eyebrow">{item.size}</p>
+            <h4 style={{ fontSize: '1.75rem', margin: '0.5rem 0', color: 'var(--color-gold)' }}>₱{item.price}</h4>
+            <p style={{ color: 'var(--color-subtle)' }}>{item.feeds}</p>
+            <ul style={{ listStyle: 'none', padding: 0, marginTop: '1rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              {item.includes.map(line => <li key={line}>✓ {line}</li>)}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
     
